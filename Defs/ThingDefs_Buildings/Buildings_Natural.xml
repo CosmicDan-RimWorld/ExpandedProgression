@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+  <ThingDef ParentName="RockBase">
+    <defName>MineableIron</defName>
+    <label>iron ore</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(103,66,61)</color>
+      <colorTwo>(124,89,84)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>One of the most common elements on terra-type planets. Can be cooked into Steel at a smelter.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>IronOre</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>20</min>
+        <max>40</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  
+</ThingDefs>

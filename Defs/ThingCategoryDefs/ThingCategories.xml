@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+    <!-- Raw resources -->
+    <ThingCategoryDef>
+      <defName>Carbon</defName>
+      <label>carbon sources</label>
+      <parent>ResourcesRaw</parent>
+      <iconPath>UI/Icons/ThingCategories/ResourcesRaw</iconPath>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+    </ThingCategoryDef>
+</ThingCategoryDefs>

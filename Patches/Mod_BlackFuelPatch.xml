@@ -1,0 +1,15 @@
+<!-- 
+    Patches for BlackFuel mod
+-->
+
+<Patch>
+    <!-- Move Coal to our new Carbon category -->
+    <Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "Coal"]/thingCategories</xpath>
+		<value>
+            <thingCategories>
+                <li>Carbon</li>
+            </thingCategories>
+		</value>
+    </Operation>
+</Patch>

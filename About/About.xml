@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Expanded Progression</name>
+    <author>CosmicDan</author>
+    <targetVersion>0.17.1557</targetVersion>
+    <description>
+        A "bridge" or "companion" mod for the 'Expanded Progression' modpack experience. Adds various little tid-bits that aren't covered by pre-existing mods along with patches to other mods. LOAD LAST!
+    </description>
+</ModMetaData>

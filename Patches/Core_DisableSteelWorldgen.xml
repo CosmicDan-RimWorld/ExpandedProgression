@@ -1,0 +1,15 @@
+<!-- 
+    Remove the Compacted Steel from worldgen
+    
+    We can't remove the whole entry (game complains, I guess something depends on it) so instead 
+    we set the commonality to 0
+-->
+
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>*/ThingDef[defName = "MineableSteel"]/building/mineableScatterCommonality</xpath>
+        <value>
+            <mineableScatterCommonality>0</mineableScatterCommonality>
+        </value>
+	</Operation>
+</Patch>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpandedProgression", "ExpandedProgression\ExpandedProgression.csproj", "{EE582DBA-C8F2-410A-BA79-93E1057D429B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE582DBA-C8F2-410A-BA79-93E1057D429B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE582DBA-C8F2-410A-BA79-93E1057D429B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE582DBA-C8F2-410A-BA79-93E1057D429B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE582DBA-C8F2-410A-BA79-93E1057D429B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

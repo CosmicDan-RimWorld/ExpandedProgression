@@ -3,5 +3,9 @@
 !/Mods
 /Mods/*
 !/Mods/ExpandedProgression
-
 !/.gitignore
+
+
+/Mods/*/Source/.vs
+/Mods/*/Source/*/bin
+/Mods/*/Source/*/obj

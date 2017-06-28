@@ -14,7 +14,7 @@ namespace ExpandedProgressionNative.Patches
     {
         static void Postfix(WorkGiver_Refuel __instance, ref Job __result)
         {
-            if (Util.isCarbonThing(__result.targetB.Thing))
+            if (Util.IsCarbonThing(__result.targetB.Thing))
                 __result.count /= 3;
         }
 
@@ -28,7 +28,7 @@ namespace ExpandedProgressionNative.Patches
     {
         static void Prefix(CompRefuelable __instance, ref Thing fuelThing)
         {
-            if (Util.isCarbonThing(fuelThing))
+            if (Util.IsCarbonThing(fuelThing))
                 fuelThing.stackCount *= 3;
         }
 
@@ -36,7 +36,7 @@ namespace ExpandedProgressionNative.Patches
 
     public class Util
     {
-        internal static bool isCarbonThing(Thing thing)
+        public static bool IsCarbonThing(Thing thing)
         {
             foreach (var thingCategory in thing.def.thingCategories)
                 if (thingCategory.defName.Equals("Carbon"))

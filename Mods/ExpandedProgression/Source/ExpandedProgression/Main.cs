@@ -5,12 +5,10 @@ using System.Reflection;
 
 namespace ExpandedProgressionNative
 {
-    [StaticConstructorOnStartup]
-    public class Main
+    public class Main : Mod
     {
-        static Main()
+        public Main(ModContentPack content) : base(content)
         {
-            // this constructor is just used to signal Harmony to look through this assembly for all patches
             var harmony = HarmonyInstance.Create("com.cosmicdan.rimworld.expandedprogression");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
             Log.Message("ExpandedProgression mod native has loaded!");

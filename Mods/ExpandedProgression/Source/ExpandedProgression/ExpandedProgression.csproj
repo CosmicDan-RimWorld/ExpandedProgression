@@ -53,8 +53,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
-    <Compile Include="Patches\GetFuelPatch.cs" />
+    <Compile Include="Patches\CarbonFuelValue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PatchOperationAppendInnerText.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

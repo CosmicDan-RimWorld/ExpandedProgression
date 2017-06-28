@@ -33,4 +33,16 @@ namespace ExpandedProgressionNative.Patches
         }
 
     }
+
+    public class Util
+    {
+        internal static bool isCarbonThing(Thing thing)
+        {
+            foreach (var thingCategory in thing.def.thingCategories)
+                if (thingCategory.defName.Equals("Carbon"))
+                    return true;
+
+            return false;
+        }
+    }
 }

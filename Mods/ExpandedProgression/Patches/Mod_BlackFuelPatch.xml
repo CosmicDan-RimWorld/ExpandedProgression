@@ -12,4 +12,26 @@
             </thingCategories>
 		</value>
     </Operation>
+	
+	<!-- Remove smallVolume and stackLimit -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName = "Coal"]/stackLimit</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>*/ThingDef[defName = "Coal"]/smallVolume</xpath>
+	</Operation>
+	
+	<!-- Remove explicit-coal fuel source from any def's (we add Carbon in a Batch patch elsewhere) -->
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef/comps/li[@Class = 'CompProperties_Refuelable']/fuelFilter/thingDefs/li[text() = "Coal"]</xpath>
+			</li>
+			
+			<li Class="PatchOperationRemove">
+				<xpath>*/ThingDef/comps/li[@Class = 'CompProperties_Refuelable']/fuelFilter/thingDefs/li[text() = "Coal"]</xpath>
+			</li>
+		</operations>
+	</Operation>
 </Patch>

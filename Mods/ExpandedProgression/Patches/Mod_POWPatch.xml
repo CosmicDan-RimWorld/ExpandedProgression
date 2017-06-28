@@ -1,0 +1,30 @@
+<!-- 
+	Patches for Powerless! mod
+-->
+
+<Patch>
+	<!-- Move Charcoal to our new Carbon category -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>*/ThingDef[defName = "POW_Charcoal"]/thingCategories</xpath>
+		<value>
+			<thingCategories>
+				<li>Carbon</li>
+			</thingCategories>
+		</value>
+	</Operation>
+	
+	<!-- Manually patch charcoal-only stations with Coal fuel support -->
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName = "POW_Grill"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs/li</xpath>
+		<value>
+			<li>Coal</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationInsert">
+		<xpath>*/ThingDef[DefName = "POW_Smoker"]/comps/li[contains(@Class,'CompProperties_Refuelable')]/fuelFilter/thingDefs/li</xpath>
+		<value>
+			<li>Coal</li>
+		</value>
+	</Operation>
+</Patch>
